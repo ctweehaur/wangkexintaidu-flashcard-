@@ -1,0 +1,37 @@
+const vocabularyData = [
+    { word: "唉声叹气", pinyin: "āi shēng tàn qì", defZh: "因伤感、烦闷或痛苦而发出叹息的声音。", defEn: "Sigh deeply / Moan and groan", defBm: "Mengeluh panjang", example: "他整天唉声叹气，提不起精神学习。" },
+    { word: "食不下咽", pinyin: "shí bù xià yàn", defZh: "吃不下东西，形容心情不好或身体不适。", defEn: "Unable to eat / Lose appetite", defBm: "Tidak lalu makan", example: "听到这个坏消息，他食不下咽，整夜辗转反侧。" },
+    { word: "彻夜难眠", pinyin: "chè yè nán mián", defZh: "整夜都难以入睡。", defEn: "Sleepless night", defBm: "Tidak dapat tidur sepanjang malam", example: "因为担心考试成绩，他彻夜难眠。" },
+    { word: "日上三竿", pinyin: "rì shàng sān gān", defZh: "太阳升得很高了，形容起床很晚。", defEn: "Late in the morning / Sleep in", defBm: "Matahari sudah tinggi", example: "他每天都睡到日上三竿才起床。" },
+    { word: "火眼金睛", pinyin: "huǒ yǎn jīn jīng", defZh: "比喻目光敏锐，能看清一切。", defEn: "Sharp eyes / Discerning", defBm: "Mata yang tajam", example: "老师火眼金睛，一眼就看出他在作弊。" },
+    { word: "彬彬有礼", pinyin: "bīn bīn yǒu lǐ", defZh: "形容文雅而有礼貌。", defEn: "Polite and courteous", defBm: "Sopan santun", example: "他待人彬彬有礼，深受同学们的喜爱。" },
+    { word: "打瞌睡", pinyin: "dǎ kē shuì", defZh: "因困倦而低头打盹。", defEn: "Doze off / Nap", defBm: "Mengantuk", example: "上课时他一直在打瞌睡，被老师点名了。" },
+    { word: "赤裸", pinyin: "chì luǒ", defZh: "光着身子，没有穿衣服。", defEn: "Naked / Bare", defBm: "Telanjang", example: "他赤裸着上身，在球场上尽情奔跑。" },
+    { word: "胳膊", pinyin: "gē bo", defZh: "肩膀到手腕的部分。", defEn: "Arm", defBm: "Lengan", example: "他不小心摔倒了，胳膊擦破了皮。" },
+    { word: "遵守", pinyin: "zūn shǒu", defZh: "依照规定、纪律去做。", defEn: "Comply with / Observe", defBm: "Mematuhi", example: "我们必须遵守学校的规章制度。" },
+    { word: "唠叨", pinyin: "láo dao", defZh: "说话啰嗦，反复说同一件事。", defEn: "Nag / Chatter", defBm: "Bebel", example: "妈妈总是唠叨他，要他好好学习。" },
+    { word: "打草稿", pinyin: "dǎ cǎo gǎo", defZh: "写作或画画前先做初步的草稿。", defEn: "Make a draft", defBm: "Membuat draf", example: "写作文前，他习惯先在纸上打草稿。" },
+    { word: "小辫儿", pinyin: "xiǎo biàn er", defZh: "把头发编成的小辫子。", defEn: "Small braid / Pigtail", defBm: "Tocang kecil", example: "小女孩扎着两条小辫儿，非常可爱。" },
+    { word: "侮辱", pinyin: "wǔ rǔ", defZh: "用言语或行为使人蒙受耻辱。", defEn: "Insult / Humiliate", defBm: "Menghina", example: "他不能忍受别人的侮辱，决定站出来反驳。" },
+    { word: "迟钝", pinyin: "chí dùn", defZh: "反应慢，不灵敏。", defEn: "Slow / Dull", defBm: "Lambat / Lemah", example: "他反应有些迟钝，需要更多时间思考。" },
+    { word: "识相", pinyin: "shí xiàng", defZh: "懂得看情况行事，知道进退。", defEn: "Know how to behave / Sensible", defBm: "Tahu keadaan", example: "他很识相，看到老师生气就立刻安静下来。" },
+    { word: "告状", pinyin: "gào zhuàng", defZh: "向长辈或上级报告别人的过错。", defEn: "Tell on / Complain", defBm: "Mengadu", example: "弟弟总是向妈妈告状，说我不让他玩。" },
+    { word: "作威作福", pinyin: "zuò wēi zuò fú", defZh: "滥用权力，欺压别人。", defEn: "Act tyrannically / Abuse power", defBm: "Bertindak zalim", example: "他仗着自己是班长，在班里作威作福。" },
+    { word: "间谍", pinyin: "jiàn dié", defZh: "暗中搜集情报的人。", defEn: "Spy", defBm: "Pengintip", example: "电影里的间谍总是神出鬼没，令人捉摸不透。" },
+    { word: "沉醉", pinyin: "chén zuì", defZh: "深深地迷恋或陶醉其中。", defEn: "Indulge in / Be intoxicated", defBm: "Tenggelam dalam", example: "他沉醉在音乐的世界里，忘记了时间。" },
+    { word: "讨债", pinyin: "tǎo zhài", defZh: "向别人索要欠下的钱财。", defEn: "Demand repayment of debt", defBm: "Menuntut hutang", example: "他上门讨债，却被人赶了出来。" },
+    { word: "口头禅", pinyin: "kǒu tóu chán", defZh: "经常挂在嘴边的话。", defEn: "Catchphrase / Pet phrase", defBm: "Frasa biasa", example: "“没问题”是他的口头禅，无论遇到什么都这么说。" },
+    { word: "讽刺", pinyin: "fěng cì", defZh: "用含蓄的话嘲笑或批评。", defEn: "Satire / Mock", defBm: "Sindiran", example: "他说话喜欢讽刺别人，让人听了很不舒服。" },
+    { word: "传授", pinyin: "chuán shòu", defZh: "把知识或技能教给别人。", defEn: "Teach / Pass on", defBm: "Menyampaikan / Mengajar", example: "老师傅把自己的手艺传授给了年轻一代。" },
+    { word: "洗耳恭听", pinyin: "xǐ ěr gōng tīng", defZh: "恭敬地倾听别人说话。", defEn: "Listen attentively", defBm: "Mendengar dengan tekun", example: "他态度诚恳，洗耳恭听老师的教诲。" },
+    { word: "一目十行", pinyin: "yí mù shí háng", defZh: "形容看书非常快。", defEn: "Read rapidly", defBm: "Membaca dengan pantas", example: "他一目十行地翻着书，很快就看完了整本。" },
+    { word: "胡说八道", pinyin: "hú shuō bā dào", defZh: "没有根据、胡乱说话。", defEn: "Talk nonsense", defBm: "Cakap bukan-bukan", example: "你别胡说八道了，根本没有这回事。" },
+    { word: "效率", pinyin: "xiào lǜ", defZh: "完成工作的速度和质量。", defEn: "Efficiency", defBm: "Kecekapan", example: "上网课时，他的学习效率明显下降了。" },
+    { word: "自律", pinyin: "zì lǜ", defZh: "自己约束自己，遵守纪律。", defEn: "Self-discipline", defBm: "Disiplin diri", example: "网课期间，自律的学生才能取得好成绩。" },
+    { word: "各显神通", pinyin: "gè xiǎn shén tōng", defZh: "各自施展自己的本领。", defEn: "Each shows their own talents", defBm: "Masing-masing menunjukkan kebolehan", example: "网课上，同学们各显神通，用各种方法认真学习。" },
+    { word: "孺子不可教也", pinyin: "rú zǐ bù kě jiào yě", defZh: "指年轻人不成器，没法教导。", defEn: "This kid is hopeless / Unteachable", defBm: "Tidak dapat diajar", example: "老师叹了口气，说：“孺子不可教也！”" },
+    { word: "耽误", pinyin: "dān wu", defZh: "因拖延或错过时机而误事。", defEn: "Delay / Hold up", defBm: "Melengahkan / Menjejaskan", example: "沉迷游戏会耽误学业，他必须改正。" }
+];
+
+// 将数据暴露为全局变量
+var allIdioms = vocabularyData;
